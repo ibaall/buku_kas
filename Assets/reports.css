@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  --webkit-user-select: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #05992f;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between; /* Updated this line */
+  color: white;
+}
+
+#signout-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 20px; /* Added this line */
+}
+
+.sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 90px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(3, 3, 3, 0.8);
+  backdrop-filter: blur(17px);
+  --webkit-backdrop-filter: blur(17px);
+  border-right: 1px solid rgba(255, 0, 0, 0, 1);
+  transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+  width: 260px;
+}
+
+.sidebar .logo {
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 25px 10px 15px;
+}
+
+.logo span {
+  color: orange;
+}
+
+.logo img {
+  width: 43px;
+  border-radius: 50%;
+}
+
+.logo h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-left: 15px;
+  display: none;
+}
+
+.sidebar:hover .logo h2 {
+  display: block;
+}
+
+.sidebar .links {
+  list-style: none;
+  margin-top: 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: calc(100%);
+}
+
+.sidebar .links::-webkit-scrollbar {
+  display: none;
+}
+
+.links li {
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.links li:hover {
+  background: #05992f;
+  cursor: pointer;
+}
+
+.links h4 {
+  color: #222;
+  font-weight: 500;
+  display: none;
+  margin-bottom: 10px;
+  transition: display 0.3s ease;
+}
+
+.sidebar:hover .links h4 {
+  display: block;
+}
+
+.links hr {
+  margin: 10px 8px;
+  border: 1px solid #4c4c4c;
+  transition: border-color 0.3s ease;
+}
+
+.sidebar:hover .links hr {
+  border-color: transparent;
+}
+
+.links li span {
+  padding: 12px 10px;
+}
+
+.links li a {
+  padding: 10px;
+  color: #000;
+  display: none;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar:hover .links li a {
+  display: block;
+}
+
+.links .logout-link {
+  margin-top: 20px;
+}
+
+.links li:hover a {
+  color: white;
+  /* Change text color on hover */
+}
+
+.sidebar:hover .links li a {
+  display: block;
+}
+
+.links .logout-link {
+  margin-top: 20px;
+}
+
+.links li:hover a {
+  color: white;
+  /* Change text color on hover */
+}
+
+.links h4 {
+  color: #222;
+  font-weight: 500;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.sidebar:hover .links h4 {
+  display: block;
+}
+
+.links hr {
+  margin: 10px 8px;
+  border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+  border-color: transparent;
+}
+
+.links li span {
+  padding: 12px 10px;
+}
+
+.links li a {
+  padding: 10px;
+  color: white;
+  display: none;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+  display: block;
+}
+.report-list-container {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.25em 0.9em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em #1c0050;
+  width: 70%;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #05992f;
+  margin-bottom: 20px;
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.submit {
+  padding: 8px 16px;
+  background-color: #05992f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit:hover {
+  background-color: #016b1f;
+  color: white;
+}
+
+.report-list-container h3 {
+  color: #05992f;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  text-align: center;
+  background-color: #05992f;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+.delete-button {
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #05992f; /* Warna latar belakang saat hover */
+}
+
+.edit-button {
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #4285f4;
+  color: white;
+  margin-left: 5px; /* Adjust the margin as needed */
+}
+
+.edit-button:hover {
+  background-color: #0058a7;
+}
+
+/* Gaya tambahan untuk tabel dengan scrollbar */
+.table-container {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #05992f;
+}
+
+.debt-container {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.25em 0.9em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em #1c0050;
+  width: 70%;
+  margin-top: 80px;
+}
+
+.budget-container {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.25em 0.9em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em #1c0050;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.cashout-container {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.25em 0.9em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em #1c0050;
+  width: 70%;
+  margin-top: 20px;
+}
+.tax-container {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.25em 0.9em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em #1c0050;
+  width: 70%;
+  margin-top: 20px;
+}

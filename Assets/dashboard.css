@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+  --webkit-user-select: none;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #05992f;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+  color: white;
+}
+
+#signout-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 90px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(3, 3, 3, 0.8);
+  backdrop-filter: blur(17px);
+  --webkit-backdrop-filter: blur(17px);
+  border-right: 1px solid rgba(255, 0, 0, 0, 1);
+  transition: width 0.3s ease;
+}
+.sidebar:hover {
+  width: 260px;
+}
+
+.sidebar .logo {
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 25px 10px 15px;
+}
+
+.logo span {
+  color: orange;
+}
+
+.logo img {
+  width: 43px;
+  border-radius: 50%;
+}
+
+.logo h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-left: 15px;
+  display: none;
+}
+
+.sidebar:hover .logo h2 {
+  display: block;
+}
+
+.sidebar .links {
+  list-style: none;
+  margin-top: 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: calc(100%);
+}
+
+.sidebar .links::-webkit-scrollbar {
+  display: none;
+}
+
+.links li {
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.links li:hover {
+  background: #05992f;
+  cursor: pointer;
+}
+
+.links h4 {
+  color: #222;
+  font-weight: 500;
+  display: none;
+  margin-bottom: 10px;
+  transition: display 0.3s ease;
+}
+
+.sidebar:hover .links h4 {
+  display: block;
+}
+
+.links hr {
+  margin: 10px 8px;
+  border: 1px solid #4c4c4c;
+  transition: border-color 0.3s ease;
+}
+
+.sidebar:hover .links hr {
+  border-color: transparent;
+}
+
+.links li span {
+  padding: 12px 10px;
+}
+
+.links li a {
+  padding: 10px;
+  color: #000;
+  display: none;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar:hover .links li a {
+  display: block;
+}
+
+.links .logout-link {
+  margin-top: 20px;
+}
+
+.links li:hover a {
+  color: white;
+  /* Change text color on hover */
+}
+
+.sidebar:hover .links li a {
+  display: block;
+}
+
+.links .logout-link {
+  margin-top: 20px;
+}
+
+.links li:hover a {
+  color: white;
+  /* Change text color on hover */
+}
+
+.links h4 {
+  color: #222;
+  font-weight: 500;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.sidebar:hover .links h4 {
+  display: block;
+}
+
+.links hr {
+  margin: 10px 8px;
+  border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+  border-color: transparent;
+}
+
+.links li span {
+  padding: 12px 10px;
+}
+
+.links li a {
+  padding: 10px;
+  color: white;
+  display: none;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+/* h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+} */
+
+.cards {
+  position: relative;
+  right: 260px;
+  /* margin-right:500px; */
+  display: flex;
+  /* justify-content: space-between; */
+  color: white;
+  text-align: center;
+}
+
+.card1 {
+  background-color: #0a7e00;
+  padding: 40px 90px;
+  margin: 0 10px;
+  /* border-radius: 5px; */
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.card2 {
+  background-color: #970000;
+  padding: 40px 90px;
+  margin: 0 10px;
+  /* border-radius: 5px; */
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.card3 {
+  background-color: #c38f08;
+  padding: 40px 90px;
+  margin: 0 10px;
+  /* border-radius: 5px; */
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.card1 img {
+  position: absolute;
+  left: 33px;
+  top: 35px;
+
+  /* width:70px; */
+}
+.card2 img {
+  position: absolute;
+  left: 420px;
+  top: 35px;
+}
+.card3 img {
+  position: absolute;
+  left: 800px;
+  top: 35px;
+}
+
+.cards h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  background-color: pink;
+  width: 180px;
+}
+
+.cards p {
+  font-size: 14px;
+  color: #777;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.previous-button {
+  border: none;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.next-button {
+  border: none;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
