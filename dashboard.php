@@ -465,9 +465,9 @@ tr:hover {
             <span><img src="img/cashoutt.png" alt="Dashboard"></span>
             <a href="CashOut.php">Cash Out</a>
             </li>
-            <!-- <li>
+            <li>
             <span><img src="img/debtt.png" alt="Dashboard"></span>
-            <a href="debt.php">Debt</a> </li> -->
+            <a href="debt.php">Debt</a> </li>
             <li>
             <span> <img src="img/tax.png" alt="Dashboard"></span>
             <a href="tax.php">Tax</a>
