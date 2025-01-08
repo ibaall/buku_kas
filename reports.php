@@ -200,6 +200,12 @@ $conn->close();
     </table>
         </div>
     </div>
+    <div class="export-section">
+    <form action="export_pdf.php" method="POST">
+        <button type="submit">Export to PDF</button>
+    </form>
+</div>
+
     </div>
 </body>
     </html>
