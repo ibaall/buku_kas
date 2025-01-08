@@ -23,7 +23,71 @@ $html = '
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report PDF</title>
-    <link rel="stylesheet" href="Assets/reports.css">
+    <style>
+        /* Gaya Umum */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        /* Gaya Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #05992f;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Kustomisasi Kolom */
+        table th:nth-child(3), table td:nth-child(3) {
+            text-align: right;
+        }
+
+        table th:nth-child(4), table td:nth-child(4), 
+        table th:nth-child(5), table td:nth-child(5) {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Laporan Buku Kas</h1>

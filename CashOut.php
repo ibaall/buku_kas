@@ -91,20 +91,20 @@ if (!empty($searchTitle)) {
                 <span><img src="img/cashoutt.png" alt="Dashboard"></span>
                 <a href="Cashout.php">Cash Out</a>
                 </li>
-                <!-- <li>
+                <li>
                 <span><img src="img/debtt.png" alt="Dashboard"></span>
-                <a href="debt.php">Debt</a> -->
+                <a href="debt.php">Debt</a>
                 <li>
                 <span> <img src="img/tax.png" alt="Dashboard"></span>
                 <a href="tax.php">Tax</a>
             </li>
-                <!--<li>
+                <li>
                 <span> <img src="img/reportt.png" alt="Dashboard"></span>
                 <a href="reports.php">Reports</a>
             </li> -->
-                <!-- <li>
+                <li>
                 <span> <img src="img/layanan.png" alt="Dashboard"></span>
-                <a href="cs.php">Information Service</a> -->
+                <a href="cs.php">Information Service</a>
             </li>
             </ul>
             </aside>
@@ -132,18 +132,14 @@ if (!empty($searchTitle)) {
                         </div>
                     </div>
                     </div>
-                    <div class="search-container">
-                <div class="search">
-    <form method="post" action="">
+                 <div class="search-container">
+    <form method="post" action="" class="search">
         <input type="text" id="search-title" name="search-title" placeholder="Masukkan kata kunci pencarian.." autocomplete="off" autofocus>
         <button type="submit" class="cari">Cari</button>
     </form>
-</div>
-
-                    <br>
-                    <div class="list-expenses" id="list-expenses">
+<div class="list-expenses" id="list-expenses">
     <div class="table-container">
-        <table border="1px" id="expenses-table"> 
+        <table border="1px" id="expenses-table">
             <tr>
                 <th>Title of Expenses</th>
                 <th>Notes</th>
@@ -151,6 +147,10 @@ if (!empty($searchTitle)) {
                 <th>Expenses Date</th>
                 <th>Actions</th>
             </tr>
+         
+    </div>
+</div>
+
             <?php
 
             if ($fetchResult) {

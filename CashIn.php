@@ -96,20 +96,20 @@ if ($totalAmountResult) {
             <span><img src="img/cashoutt.png" alt="Dashboard"></span>
             <a href="Cashout.php">Cash Out</a>
             </li>
-            <!-- <li>
+            <li>
             <span><img src="img/debtt.png" alt="Dashboard"></span>
-            <a href="debt.php">Debt</a> -->
+            <a href="debt.php">Debt</a> 
             <li>
             <span> <img src="img/tax.png" alt="Dashboard"></span>
             <a href="tax.php">Tax</a>
             </li>
-            <!-- <li>
+            <li>
             <span> <img src="img/reportt.png" alt="Dashboard"></span>
             <a href="reports.php">Reports</a>
-        </li> -->
-            <!-- <li>
+        </li> 
+            <li>
             <span> <img src="img/layanan.png" alt="Dashboard"></span>
-            <a href="cs.php">Information Service</a> -->
+            <a href="cs.php">Information Service</a> 
         </li>
         </ul>
         </aside>
