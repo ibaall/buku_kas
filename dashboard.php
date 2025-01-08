@@ -453,7 +453,7 @@ tr:hover {
             <h4>Main Menu</h4>
             <li>
             <span><img src="img/dash (2).png" alt="Dashboard"></span>
-            <a href="dashboard.php">Dashboard</a>
+            <!--<a href="dashboard.php">Dashboard</a>-->
             </li>
                     
             <h4>Transaction</h4>
@@ -472,13 +472,13 @@ tr:hover {
             <span> <img src="img/tax.png" alt="Dashboard"></span>
             <a href="tax.php">Tax</a>
             </li>
-            <!-- <li>
+            <li>
             <span> <img src="img/reportt.png" alt="Dashboard"></span>
             <a href="reports.php">Reports</a>
-            </li> -->
-            <!-- <li>
+            </li> 
+            <li>
             <span> <img src="img/layanan.png" alt="Dashboard"></span>
-            <a href="cs.php">Information Service</a> -->
+            <a href="cs.php">Information Service</a>
         </li>
         </ul>
         </aside>
