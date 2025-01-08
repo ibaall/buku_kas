@@ -453,7 +453,7 @@ tr:hover {
             <h4>Main Menu</h4>
             <li>
             <span><img src="img/dash (2).png" alt="Dashboard"></span>
-            <!--<a href="dashboard.php">Dashboard</a>-->
+            <a href="dashboard.php">Dashboard</a>
             </li>
                     
             <h4>Transaction</h4>

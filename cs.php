@@ -306,7 +306,7 @@ if (!isset($_SESSION['UserID'])) {
             <span><img src="img/cashoutt.png" alt="Dashboard"></span>
             <a href="CashOut.php">Cash Out</a>
             </li>
-            <!-- <li>
+        <li>
             <span><img src="img/debtt.png" alt="Dashboard"></span>
             <a href="debt.php">Debt</a>
         </li>
