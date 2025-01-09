@@ -136,8 +136,51 @@ foreach ($sqlExpenses as $row) {
         <td>{$row['expenses_date']}</td>
     </tr>";
 }
+$html .= '</tbody></table>';
+$html .= '<h2>Budget Report</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Notes</th>
+                <th>Amount</th>
+                <th>Budget Date</th>
+            </tr>
+        </thead>
+        <tbody>';
+
+foreach ($sqlBudget as $row) {
+    $html .= "<tr>
+        <td>{$row['title_budget']}</td>
+        <td>{$row['notes_budget']}</td>
+        <td>{$row['amount_budget']}</td>
+        <td>{$row['budget_date']}</td>
+    </tr>";
+}
 
 $html .= '</tbody></table>';
+
+$html .= '<h2>Tax Report</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Tax Total</th>
+                <th>Due Date</th>
+            </tr>
+        </thead>
+        <tbody>';
+
+foreach ($sqlTax as $row) {
+    $html .= "<tr>
+        <td>{$row['product_name']}</td>
+        <td>{$row['tax_total']}</td>
+        <td>{$row['due_date_tax']}</td>
+    </tr>";
+}
+
+$html .= '</tbody></table>';
+
 
 $html .= '</body>
 </html>';

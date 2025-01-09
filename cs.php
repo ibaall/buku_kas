@@ -326,7 +326,7 @@ if (!isset($_SESSION['UserID'])) {
         </aside>
     <div class="cs-container">
         <h1>Layanan Informasi</h1>
-
+<!-- 
         <div class="image-container">
             <a href="https://www.instagram.com/bukukas.co.id?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==" class="image">
                 <img src="img/iconig.png" alt="ig" />
@@ -336,33 +336,33 @@ if (!isset($_SESSION['UserID'])) {
                     <h3>Admin Instagram</h3>
                 </a>
             </div>
-        </div>
+        </div> -->
         <div class="image-container">
-            <a href="https://wa.me/6281349579566?text=Halo admin Iqbal, saya ada beberapa keluhan" class="image">
+            <a href="https://wa.me/6282199809437?text=Halo admin rista, saya ada beberapa keluhan" class="image">
                 <img src="img/iconwa.png" alt="wa" />
             </a>
             <div class="text-container">
-                <a href="https://wa.me/6281349579566?text=Halo admin Iqbal, saya ada beberapa keluhan">
+                <a href="https://wa.me/6282199809437?text=Halo admin rista, saya ada beberapa keluhan">
                     <h3>Admin 1</h3>
                 </a>
             </div>
         </div>
         <div class="image-container">
-            <a href="https://wa.me/6285156891309?text=Halo admin yoga, saya ada keluhan"class="image">
+            <a href="https://wa.me/6281234439102?text=Halo admin trisna, saya ada keluhan"class="image">
                 <img src="img/iconwa.png" alt="twitter" />
             </a>
             <div class="text-container">
-                <a href="https://wa.me/6285156891309?text=Halo admin yoga, saya ada keluhan">
+                <a href="https://wa.me/6281234439102?text=Halo admin trisna, saya ada keluhan">
                     <h3>Admin 2</h3>
                 </a>
             </div>
         </div>
         <div class="image-container">
-            <a href="https://wa.me/6288217139228?text=Halo admin Bimo, saya ada keluhan" class="image">
+            <a href="https://wa.me/6283830233545?text=Halo admin Vena, saya ada keluhan" class="image">
                 <img src="img/iconwa.png" alt="twitter" />
             </a>
             <div class="text-container">
-                <a href="https://wa.me/6288217139228?text=Halo admin Bimo, saya ada keluhan">
+                <a href="https://wa.me/6283830233545?text=Halo admin Vena, saya ada keluhan">
                     <h3>Admin 3</h3>
                 </a>
             </div>
