@@ -317,7 +317,7 @@ if (!isset($_SESSION['UserID'])) {
             <li>
             <span> <img src="img/reportt.png" alt="Dashboard"></span>
             <a href="reports.php">Reports</a>
-        </li> -->
+        </li>
             <li>
             <span> <img src="img/layanan.png" alt="Dashboard"></span>
             <a href="cs.php">Layanan Informasi</a>
@@ -326,17 +326,7 @@ if (!isset($_SESSION['UserID'])) {
         </aside>
     <div class="cs-container">
         <h1>Layanan Informasi</h1>
-<!-- 
-        <div class="image-container">
-            <a href="https://www.instagram.com/bukukas.co.id?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==" class="image">
-                <img src="img/iconig.png" alt="ig" />
-            </a>
-            <div class="text-container">
-                <a href="https://www.instagram.com/bukukas.co.id?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==">
-                    <h3>Admin Instagram</h3>
-                </a>
-            </div>
-        </div> -->
+
         <div class="image-container">
             <a href="https://wa.me/6282199809437?text=Halo admin rista, saya ada beberapa keluhan" class="image">
                 <img src="img/iconwa.png" alt="wa" />

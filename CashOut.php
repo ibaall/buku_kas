@@ -61,7 +61,7 @@ if (!empty($searchTitle)) {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Expenses</title>
+        <title>Cash Out</title>
         <link rel="icon" href="img/logo-title.png" type="image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
         <link rel="stylesheet" href="Assets/cashout.css">
@@ -101,7 +101,7 @@ if (!empty($searchTitle)) {
                 <li>
                 <span> <img src="img/reportt.png" alt="Dashboard"></span>
                 <a href="reports.php">Reports</a>
-            </li> -->
+            </li> 
                 <li>
                 <span> <img src="img/layanan.png" alt="Dashboard"></span>
                 <a href="cs.php">Information Service</a>
@@ -117,7 +117,7 @@ if (!empty($searchTitle)) {
             <div class="wrapper">
                 <div class="container">
                     <div class="total-amount-container">
-                        <h3>Expenses</h3>
+                        <h3>Pengeluaran</h3>
                         <div class="dropdown">
                         </div>
                         <div>
@@ -126,18 +126,14 @@ if (!empty($searchTitle)) {
         <input type="text" name="Notes-text" id="Notes-text" placeholder="Notes...">
         <input type="text" name="total-amount" id="total-amount" placeholder="Enter Total Amount">
         <input type="date" name="expenses" id="expenses" placeholder="Select Expenses Date">
-        <button type="submit" class="submit-expensesbtn" id="total-amount-button">Set Budget</button>
+        <button type="submit" class="submit-expensesbtn" id="total-amount-button">Tambahkan Pengeluaran</button>
     </form>
 
                         </div>
                     </div>
                     </div>
                  <div class="search-container">
-    <form method="post" action="" class="search">
-        <input type="text" id="search-title" name="search-title" placeholder="Masukkan kata kunci pencarian.." autocomplete="off" autofocus>
-        <button type="submit" class="cari">Cari</button>
-    </form>
-<div class="list-expenses" id="list-expenses">
+    <div class="list-expenses" id="list-expenses">
     <div class="table-container">
         <table border="1px" id="expenses-table">
             <tr>

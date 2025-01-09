@@ -264,81 +264,128 @@ $resulttax = $conn->query($sql);
   display: block;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
-}
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
 
-.container {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 600px;
-}
+    body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
 
-/* h1 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-} */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-.cards {
-  position: relative;
-  right: 260px;
-  /* margin-right:500px; */
-  display: flex;
-  /* justify-content: space-between; */
-  color: white;
-  /* text-align: center; */
-}
+    .top {
+        margin-top: 60px;
+        text-align: center;
+    }
 
-.card1 {
-  background-color: #0a7e00;
-  padding: 20px 80px;
-  margin: 0 10px;
-  /* border-radius: 5px; */
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-}
-.card2 {
-  background-color: #970000;
-  padding: 20px 80px;
-  margin: 0 50px;
-  /* border-radius: 5px; */
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-}
-.card3 {
-  background-color: #c38f08;
-  padding: 20px 80px;
-  margin: 0 10px;
-  /* border-radius: 5px; */
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-}
-.card1 img {
+    .top h1 {
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+
+    .top h1 span {
+        font-size: 24px;
+        color: #05992f;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .card1, .card2, .card3 {
+        flex: 1 1 calc(33.33% - 20px); /* Tiga kolom di layar besar */
+        background: linear-gradient(135deg, #05992f, #02732a);
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .card1:hover, .card2:hover, .card3:hover {
+        transform: translateY(-5px);
+    }
+
+    .card1 img, .card2 img, .card3 img {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    .cards h3 {
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+
+    .cards p {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .cards {
+            gap: 15px;
+        }
+
+        .card1, .card2, .card3 {
+            flex: 1 1 calc(50% - 15px); /* Dua kolom untuk layar tablet */
+        }
+
+        .top h1 {
+            font-size: 14px;
+        }
+
+        .top h1 span {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .card1, .card2, .card3 {
+            flex: 1 1 100%; /* Satu kolom untuk layar kecil */
+        }
+
+        .top h1 span {
+            font-size: 18px;
+        }
+    }
+/* .card1 img {
   position: absolute;
   left: 260px;
   top: 18px;
 
   /* width:70px; */
-}
-.card2 img {
+
+/* .card2 img {
   position: absolute;
   left: 665px;
   top: 18px;
-}
-.card3 img {
+} */
+/* .card3 img {
   position: absolute;
   left: 1050px;
   width:10%;
   top: 12px;
-}
+} */ */
 
 .cards h3 {
   font-weight:normal;
   font-size: 15px;
   margin-bottom: 5px;
-  /* background-color: pink; */
   width: 180px;
   position:relative;
   right:35px;
@@ -422,21 +469,21 @@ tr:hover {
       <div class="cards" style="margin-top: 20px">
         <div class="card1">
           <div class="side">
-
           </div>
           <p style="color: white;">Total Income</p>
           <h3>Rp.<?php echo $totalAmount ?></h3>
           <img src="img/enter.png" alt="">
-          
         </div>
+
         <div class="card2">
           <p style="color:white;">Total Outcome</p>
-        <h3>Rp.<?php echo $totalExpenses ?></h3>
+          <h3>Rp.<?php echo $totalExpenses ?></h3>
           <img src="img/out.png" alt="">
         </div>
+
         <div class="card3">
           <p style="color:white;">Balance</p>
-        <h3>Rp.<?php echo $balance ?></h3>
+          <h3>Rp.<?php echo $balance ?></h3>
           <img src="img/cash.png" alt="">
         </div>
       </div>
