@@ -20,11 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $result = mysqli_query($conn, $query);
 
-    if ($result) {
-        // echo "<script>alert('Data inserted successfully');</script>";
-    } else {
-        echo "Error: " . mysqli_error($conn);
-    }
+    // if ($result) {
+    //     echo "<script>alert('Data inserted successfully');</script>";
+    // } else {
+    //     echo "Error: " . mysqli_error($conn);
+    // }
 }
 
 $searchTitle = isset($_POST['search-title']) ? mysqli_real_escape_string($conn, $_POST['search-title']) : '';
@@ -50,15 +50,8 @@ if ($totalAmountResult) {
 }
 
 
-// SEARCH BAR
-
 ?>
-
- 
-
-
 <!DOCTYPE html>
-
 
 <html lang="en">
 
@@ -66,7 +59,7 @@ if ($totalAmountResult) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Outs</title>
+    <title>Cash In</title>
     <link rel="icon" href="img/logo-title.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
     <link rel="stylesheet" href="Assets/cashin.css">
@@ -123,7 +116,7 @@ if ($totalAmountResult) {
         <div class="wrapper">
             <div class="container">
                 <div class="total-amount-container">
-                    <h3>budget</h3>
+                    <h3>Budget</h3>
                     
                     <div>
                     <form method="post" action="">
@@ -139,7 +132,7 @@ if ($totalAmountResult) {
    
                 <br>
                 <div class="budget-list">
-                    <h3>budget List</h3>
+                    <h3>Pendapatan Masuk</h3>
 
                     <div class="list-budget" id="list-budget">
                         <div class="table-container">
@@ -151,6 +144,11 @@ if ($totalAmountResult) {
                                     <th>budget Date</th>
                                     <th>Action</th>
                                 </tr>
+                                </div>
+                                <div class="card1">
+                                <div class="side">
+                                <p style="color: black;">Total Income</p>
+                                <p>Rp.<?php echo $totalAmount ?></p>
                                 <?php
 $fetchQuery = "SELECT * FROM budgets";
 $fetchResult = mysqli_query($conn, $fetchQuery);
