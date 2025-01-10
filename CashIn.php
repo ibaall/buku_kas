@@ -63,6 +63,62 @@ if ($totalAmountResult) {
     <link rel="icon" href="img/logo-title.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
     <link rel="stylesheet" href="Assets/cashin.css">
+    <style>
+        /* Styling for card1 */
+.card1 {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for side inside card1 */
+.card1 .side {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2px;
+}
+
+/* Styling for title in side */
+.card1 .side p:first-child {
+    font-size: 10px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+/* Styling for total amount */
+.card1 .side p:last-child {
+    font-size: 24px;
+    font-weight: 600;
+    color: green;
+    margin: 0;
+}
+
+/* Adding a little hover effect for better interaction */
+.card1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Additional styling for the container */
+.card1 .side p {
+    margin: 5px 0;
+}
+
+.card1 .side p:last-child {
+    font-size: 20px;
+    color: green; 
+    font-weight: bold;
+}
+
+    </style>
 </head>
 
 <body>
@@ -107,10 +163,9 @@ if ($totalAmountResult) {
         </ul>
         </aside>
 
-        <div class="topbar" style="border-bottom:5px solid #02571a; background-color:#108f34 " >
-    <h4></h4>
-      <!-- <h4></h4><img style="width:6%; border-radius: 5px" src="img/logoo.png" alt="">Buku Kas</h4> -->
-      <a href="logout.php" id="signout-link">Sign Out</a>
+        <div class="topbar">
+                <h4>Welcome <?php echo $_SESSION["username"]; ?> !</h4>
+                <a href="logout.php" id="signout-link">Sign Out</a>
     </div>
     <div class="user-amount-container">
         <div class="wrapper">
@@ -147,7 +202,7 @@ if ($totalAmountResult) {
                                 </div>
                                 <div class="card1">
                                 <div class="side">
-                                <p style="color: black;">Total Income</p>
+                                <p>Total Income</p>
                                 <p>Rp.<?php echo $totalAmount ?></p>
                                 <?php
 $fetchQuery = "SELECT * FROM budgets";
